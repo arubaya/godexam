@@ -1,9 +1,18 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
-const page = () => {
+const DashboardPage = () => {
   return (
-    <div>page</div>
+    <Box>
+      <Box>
+      Exam in Progress
+      </Box>
+      <Box>
+      {`Today's Exam`}
+      </Box>
+
+    </Box>
   )
 }
 
-export default page
+export default DashboardPage

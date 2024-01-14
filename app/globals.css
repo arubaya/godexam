@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

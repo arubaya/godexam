@@ -1,24 +1,27 @@
 import { TypographyOptions } from '@mui/material/styles/createTypography';
+import { Outfit } from 'next/font/google'
+
+const outfit = Outfit({ subsets: ['latin'] })
 
 const typography: TypographyOptions = {
-  fontFamily: '"Inter", sans-serif',
+  fontFamily: outfit.style.fontFamily,
   display1: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: outfit.style.fontFamily,
     fontWeight: 400,
     fontSize: '5.25rem',
   },
   display2: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: outfit.style.fontFamily,
     fontWeight: 400,
     fontSize: '4.813rem',
   },
   display3: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: outfit.style.fontFamily,
     fontWeight: 400,
     fontSize: '3.938rem',
   },
   display4: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: outfit.style.fontFamily,
     fontWeight: 400,
     fontSize: '3.063rem',
   },
@@ -55,13 +58,13 @@ const typography: TypographyOptions = {
     fontSize: '0.75rem',
   },
   deleted: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: outfit.style.fontFamily,
     fontWeight: 400,
     fontSize: '0.875rem',
     textDecorationLine: 'line-through',
   },
   underline: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: outfit.style.fontFamily,
     fontWeight: 400,
     fontSize: '0.875rem',
     textDecorationLine: 'underline',

@@ -15,10 +15,10 @@ const LoginPage = () => {
         <Box className="w-full min-h-screen flex items-center justify-center">
       <Paper
         // elevation={3}
-        className="rounded-lg shadow-md p-6"
+        className="rounded-lg shadow-md p-6 min-w-[290px] min-h-[350px]"
       >
-        <Box>
-          <Image src={GodExamLogo} alt="Exam Logo" /> 
+        <Box component='div' className="w-full flex justify-center items-center">
+          <Image src={GodExamLogo} alt="Exam Logo" width={100} /> 
         </Box>
         <Box sx={{ marginTop: '20px', marginBottom: '10px' }}>
           <Typography sx={{ textAlign: 'center' }} variant="body1">

@@ -12,6 +12,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
+    "@tabler/icons-react": "^2.40.0",
     "classnames": "^2.3.2",
     "next": "14.0.3",
     "react": "^18",
