@@ -20,24 +20,17 @@ const SidebarNavigation = () => {
     }));
   }, [path]);
   return (
-    <Box
-      className="fixed flex min-h-screen p-3"
-      sx={{
-        width: SIDEBAR_WIDTH,
-      }}
-    >
-      <Box className="flex flex-col self-stretch w-full p-3">
-        <Box className="flex items-center self-start w-full gap-2 p-2 mt-2">
-          <Image src={APP_LOGO_MINI} alt="exam logo" height={40} />
-          <Typography variant="h3" fontWeight={700}>
-            GodExam.
-          </Typography>
-        </Box>
-        <Box component="nav" className="flex flex-col gap-2 mt-10">
-          {menus.map((menu) => (
-            <NavigationItem key={menu.href} {...menu} />
-          ))}
-        </Box>
+    <Box className="flex flex-col self-stretch w-full p-3">
+      <Box className="flex items-center self-start w-full gap-2 p-2 mt-2">
+        <Image src={APP_LOGO_MINI} alt="exam logo" height={40} />
+        <Typography variant="h3" fontWeight={700}>
+          GodExam.
+        </Typography>
+      </Box>
+      <Box component="nav" className="flex flex-col gap-2 mt-10">
+        {menus.map((menu) => (
+          <NavigationItem key={menu.href} {...menu} />
+        ))}
       </Box>
     </Box>
   );
