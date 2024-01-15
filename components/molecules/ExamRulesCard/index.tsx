@@ -14,10 +14,18 @@ import dayjs from "dayjs";
 import React from "react";
 
 const ExamRulesCard = () => {
-  const { setAgreeRule, activeExam, setStartExam } = useExamStore();
+  const {
+    activeExam,
+    setStartExam,
+    setRunningTime,
+    setAnsweredQuestion,
+    setCurrentQuestionId,
+  } = useExamStore();
   const handleAgreeRule = () => {
-    setAgreeRule(true);
     setStartExam(true);
+    setRunningTime();
+    setAnsweredQuestion("", "", true);
+    setCurrentQuestionId("");
   };
   return (
     <Box className="flex flex-col w-full gap-2">

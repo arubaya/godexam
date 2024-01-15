@@ -20,9 +20,9 @@ type ExamStoreAction = {
   setActiveExam: (exam: ActiveExam) => void;
   setAgreeRule: (isAgreeRule: boolean) => void;
   setStartExam: (isStartExam: boolean) => void;
-  setRunningTime: (runningTime: number) => void;
+  setRunningTime: (runningTime?: number) => void;
   setCurrentQuestionId: (id: string) => void;
-  setAnsweredQuestion: (id: string, answer: string) => void;
+  setAnsweredQuestion: (id: string, answer: string, isReset?: boolean) => void;
   setPagination: (pagination: ExamStoreState["pagination"]) => void;
   resetExamStore: () => void;
 };
@@ -58,28 +58,33 @@ const useExamStore = create<ExamStore>()(
       setActiveExam: (exam) => set({ activeExam: exam }),
       setAgreeRule: (isAgreeRule) => set({ isAgreeRule }),
       setStartExam: (isStartExam) => set({ isStartExam }),
-      setRunningTime: (runningTime) => set({ runningTime }),
+      setRunningTime: (runningTime) =>
+        set({ runningTime: runningTime || INIT_EXAM_STATE.runningTime }),
       setCurrentQuestionId: (currentQuestionId) => set({ currentQuestionId }),
       setPagination: (pagination) => set({ pagination }),
-      setAnsweredQuestion: (id: string, answer: string) => {
+      setAnsweredQuestion: (id: string, answer: string, isReset?: boolean) => {
         const { answeredQuestions } = get();
-        const findAnswerIndex = answeredQuestions.findIndex(
-          (answer) => answer.id === id
-        );
-        const newAnsweredQuestions = produce(answeredQuestions, (draft) => {
-          if (findAnswerIndex < 0) {
-            draft.push({
-              id,
-              answer,
-            });
-          } else {
-            draft[findAnswerIndex] = {
-              id,
-              answer,
-            };
-          }
-        });
-        set({ answeredQuestions: newAnsweredQuestions });
+        if (!isReset) {
+          const findAnswerIndex = answeredQuestions.findIndex(
+            (answer) => answer.id === id
+          );
+          const newAnsweredQuestions = produce(answeredQuestions, (draft) => {
+            if (findAnswerIndex < 0) {
+              draft.push({
+                id,
+                answer,
+              });
+            } else {
+              draft[findAnswerIndex] = {
+                id,
+                answer,
+              };
+            }
+          });
+          set({ answeredQuestions: newAnsweredQuestions });
+        } else {
+          set({ answeredQuestions: [] });
+        }
       },
       resetExamStore: () => set((state) => ({ ...state, ...INIT_EXAM_STATE })),
     }),

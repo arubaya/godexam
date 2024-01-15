@@ -5,9 +5,13 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import React, { useState } from "react";
 import Modal from "@/components/molecules/Modal";
 import ReviewAnswer from "@/components/molecules/ReviewAnswer";
+import { useRouter } from "next/navigation";
+import { replaceString } from "@/utils/helper";
+import { EXAM_RESULT_PATH } from "@/constants/routes";
 
 const FooterExam = () => {
-  const { pagination, setCurrentQuestionId } = useExamStore();
+  const router = useRouter();
+  const { pagination, setCurrentQuestionId, activeExam } = useExamStore();
   const [openReviewModal, setOpenReviewModal] = useState(false);
   const handlePagination = (id: string) => {
     if (pagination.isLastQuestion && id === "") {
@@ -19,6 +23,7 @@ const FooterExam = () => {
 
   const handleOnSubmit = () => {
     setOpenReviewModal(false);
+    router.replace(replaceString(EXAM_RESULT_PATH, { id: activeExam.id }));
   };
   return (
     <Box

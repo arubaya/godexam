@@ -30,7 +30,7 @@ const ExamItem = ({
   totalQuestion,
 }: ExamItemProps) => {
   return (
-    <Card className="min-w-[340px]">
+    <Card className="min-w-[270px]">
       <Box className="flex items-center gap-2">
         <IconFileSpreadsheet size={50} className="text-primary-main" />
         <Box className="flex flex-col">

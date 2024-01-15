@@ -1,3 +1,4 @@
+import useGlobalStateStore from "@/stores/useGlobalStateStore";
 import { Box, Typography } from "@mui/material";
 import classNames from "classnames";
 import { Url } from "next/dist/shared/lib/router/router";
@@ -12,9 +13,11 @@ interface NavigationItemProps {
 }
 
 const NavigationItem = ({ active, href, icon, title }: NavigationItemProps) => {
+  const { setOpenSidebarNavigation } = useGlobalStateStore();
   return (
     <Link href={href}>
       <Box
+        onClick={() => setOpenSidebarNavigation(false)}
         className={classNames(
           "flex items-center w-full gap-3 px-4 py-3 transition-all rounded-2xl",
           {

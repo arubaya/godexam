@@ -49,7 +49,7 @@ const DashboardPage = () => {
 
       <Box className="flex flex-col w-full gap-3">
         <Typography variant="h3">Today&apos;s Exam</Typography>
-        <Box className="grid grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] gap-3">
+        <Box className="grid grid-cols-[repeat(auto-fit,_minmax(270px,_1fr))] gap-3">
           {currentExam.map((exam) => (
             <ExamItem
               key={exam.id}

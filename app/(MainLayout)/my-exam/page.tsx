@@ -27,7 +27,7 @@ const MyExamPage = () => {
         autoComplete="off"
         onChange={(e) => setSearchText(e.target.value)}
       />
-      <Box className="grid grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] gap-3">
+      <Box className="grid grid-cols-[repeat(auto-fit,_minmax(270px,_1fr))] gap-3">
         {processedExamList.map((exam) => (
           <ExamItem
             key={exam.id}

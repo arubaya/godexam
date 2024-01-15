@@ -6,7 +6,7 @@ import useExamStore from "@/stores/useExamStore";
 import { Box } from "@mui/material";
 import React from "react";
 
-const ExamPage = () => {
+const ExamPageById = () => {
   const { isStartExam } = useExamStore();
   return (
     <Box className="flex flex-col items-stretch flex-1 w-full px-3 ">
@@ -15,4 +15,4 @@ const ExamPage = () => {
   );
 };
 
-export default ExamPage;
+export default ExamPageById;

@@ -76,12 +76,12 @@ const ActiveExamQuestionListCard = () => {
         setRunningTime(runningTime - 1000);
       } else {
         clearInterval(timer);
-        router.push(replaceString(EXAM_RESULT_PATH, { id: activeExam.id }));
+        router.replace(replaceString(EXAM_RESULT_PATH, { id: activeExam.id }));
       }
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [runningTime, setRunningTime]);
+  }, [activeExam.id, router, runningTime, setRunningTime]);
 
   const handleChooseActiveQuestion = (questionId: string) => {
     setCurrentQuestionId(questionId);
@@ -89,9 +89,7 @@ const ActiveExamQuestionListCard = () => {
   return (
     <Card className="min-w-[270px] md:w-[30%]">
       <Box className="flex items-center w-full gap-2">
-        <Typography>
-          Time remaining: {countDownTimer} {runningTime}
-        </Typography>
+        <Typography>Time remaining: {countDownTimer}</Typography>
         <Typography className="font-semibold"></Typography>
       </Box>
       <Box className=" grid grid-cols-[repeat(auto-fit,_minmax(40px,_40px))] gap-2">
