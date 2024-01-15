@@ -7,26 +7,31 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Berapakah hasil dari 2 + 2?",
         options: ["3", "4", "5", "6", "7"],
         correctAnswer: "4",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Luas segitiga dengan alas 6 dan tinggi 8 adalah?",
         options: ["12", "24", "30", "36", "48"],
         correctAnswer: "24",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa hasil dari 5 x 9?",
         options: ["40", "45", "50", "55", "60"],
         correctAnswer: "45",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Akar kuadrat dari 64 adalah?",
         options: ["6", "7", "8", "9", "10"],
         correctAnswer: "8",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Jika a = 3 dan b = 4, berapakah nilai a^2 + b^2?",
         options: ["5", "9", "13", "15", "25"],
         correctAnswer: "25",
@@ -43,21 +48,25 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Apa sinonim dari kata 'happy'?",
         options: ["Sad", "Joyful", "Angry", "Tired", "Excited"],
         correctAnswer: "Joyful",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Apa lawan kata dari 'fast'?",
         options: ["Slow", "Quick", "Rapid", "Swift", "Brisk"],
         correctAnswer: "Slow",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa arti dari kata 'beautiful' dalam bahasa Indonesia?",
         options: ["Jelek", "Indah", "Buruk", "Cantik", "Rusak"],
         correctAnswer: "Cantik",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Bagaimana cara mengeja kata 'environment' dengan benar?",
         options: [
           "Enviroment",
@@ -69,6 +78,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Environment",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Apakah 'book' dalam bahasa Indonesia?",
         options: ["Meja", "Buku", "Kursi", "Pensil", "Lemari"],
         correctAnswer: "Buku",
@@ -85,6 +95,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Apa rumus untuk menghitung gaya?",
         options: [
           "F = m * a",
@@ -96,6 +107,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "F = m * a",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Apa rumus untuk menghitung energi kinetik?",
         options: [
           "E = m * c^2",
@@ -107,6 +119,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "K = 0.5 * m * v^2",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa penyebab terjadinya gaya gravitasi?",
         options: [
           "Medan listrik",
@@ -118,6 +131,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Massa benda",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Apa rumus untuk menghitung usaha?",
         options: [
           "W = m * g * h",
@@ -129,6 +143,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "W = F * d",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question:
           "Sebuah benda dilempar ke atas. Apa yang terjadi pada percepatannya?",
         options: [
@@ -152,16 +167,19 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Apa simbol kimia untuk unsur hidrogen?",
         options: ["Hg", "He", "H", "O", "N"],
         correctAnswer: "H",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Apa rumus kimia untuk air (H2O)?",
         options: ["CO2", "H2O", "CH4", "O2", "NH3"],
         correctAnswer: "H2O",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa jenis reaksi kimia yang melibatkan pelepasan panas?",
         options: [
           "Reaksi endotermis",
@@ -173,11 +191,13 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Reaksi eksotermis",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Apa rumus kimia untuk gas oksigen?",
         options: ["CO2", "O2", "H2", "N2", "Cl2"],
         correctAnswer: "O2",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Berapa jumlah proton dalam inti atom karbon (C)?",
         options: ["4", "5", "6", "7", "8"],
         correctAnswer: "6",
@@ -194,6 +214,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Siapakah presiden pertama Indonesia?",
         options: [
           "Soekarno",
@@ -205,6 +226,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Soekarno",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Apa peristiwa yang terjadi pada 17 Agustus 1945?",
         options: [
           "Proklamasi Kemerdekaan",
@@ -216,6 +238,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Proklamasi Kemerdekaan",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Kapan terjadinya Perang Dunia II?",
         options: [
           "1914-1918",
@@ -227,6 +250,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "1939-1945",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Apa penyebab terjadinya Perang Dingin?",
         options: [
           "Perebutan koloni",
@@ -238,6 +262,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Persaingan ideologi",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Siapa tokoh Revolusi Industri di Inggris?",
         options: [
           "Karl Marx",
@@ -260,6 +285,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Apa fungsi mitokondria dalam sel?",
         options: [
           "Pengatur sel",
@@ -271,6 +297,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Pembentukan energi",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Apa perbedaan antara sel prokariotik dan eukariotik?",
         options: [
           "Ukuran",
@@ -282,6 +309,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Adanya inti sel",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa yang dimaksud dengan fotosintesis?",
         options: [
           "Pembentukan protein",
@@ -293,11 +321,13 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Pengikatan energi matahari",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Berapa jumlah gigi pada manusia dewasa?",
         options: ["28", "32", "36", "40", "44"],
         correctAnswer: "32",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Apa yang menjadi fungsi DNA?",
         options: [
           "Pembentukan energi",
@@ -320,16 +350,19 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Apa jenis alat musik gesek?",
         options: ["Gitar", "Piano", "Biola", "Flute", "Drum"],
         correctAnswer: "Biola",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Siapa komponis terkenal dari era Klasik?",
         options: ["Beethoven", "Mozart", "Bach", "Chopin", "Vivaldi"],
         correctAnswer: "Mozart",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa yang dimaksud dengan not balok?",
         options: [
           "Sistem penulisan nada",
@@ -341,11 +374,13 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Sistem penulisan nada",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Apa alat musik tiup yang terbuat dari logam?",
         options: ["Saxophone", "Clarinet", "Flute", "Trombone", "Trumpet"],
         correctAnswer: "Trumpet",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Apa yang dimaksud dengan tempo dalam musik?",
         options: [
           "Ketinggian nada",
@@ -368,6 +403,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Apa jenis kata 'berlari'?",
         options: [
           "Kata Kerja",
@@ -379,16 +415,19 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Kata Kerja",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Apa sinonim dari kata 'bersemangat'?",
         options: ["Malas", "Lesu", "Berat", "Ceria", "Riang"],
         correctAnswer: "Ceria",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa lawan kata dari 'jauh'?",
         options: ["Dekat", "Cepat", "Lambat", "Sedikit", "Lebar"],
         correctAnswer: "Dekat",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Apa fungsi dari tanda baca koma (,)?",
         options: [
           "Menandai akhir kalimat",
@@ -400,6 +439,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Memisahkan kalimat",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Apa makna dari ungkapan 'seperti kera mendapat bunga'?",
         options: [
           "Tidak tahu diri",
@@ -422,6 +462,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     totalQuestion: 5,
     questions: [
       {
+        id: "550e8400-e29b-41d4-a716-446655440000",
         question: "Apa kepanjangan dari HTML?",
         options: [
           "Hyper Transfer Markup Language",
@@ -433,6 +474,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Hyper Text Markup Language",
       },
       {
+        id: "123e4567-e89b-12d3-a456-426614174001",
         question: "Apa fungsi dari CSS dalam pengembangan web?",
         options: [
           "Mengatur tata letak",
@@ -444,6 +486,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Mengatur tata letak",
       },
       {
+        id: "98765432-ABCD-1234-5678-123456789012",
         question: "Apa yang dimaksud dengan 'backend' dalam pengembangan web?",
         options: [
           "Bagian depan website",
@@ -455,6 +498,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Database dan server",
       },
       {
+        id: "abcdef12-3456-7890-abcd-ef1234567890",
         question: "Apa peran dari SQL dalam pengembangan aplikasi database?",
         options: [
           "Menyusun tata letak",
@@ -466,6 +510,7 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
         correctAnswer: "Mengelola database",
       },
       {
+        id: "00001111-2222-3333-4444-555566667777",
         question: "Apa yang dimaksud dengan 'API'?",
         options: [
           "Antarmuka Pengguna",

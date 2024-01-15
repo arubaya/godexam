@@ -22,7 +22,7 @@ const Header = ({ title, subtitle }: HeaderProps) => {
   return (
     <Box
       component="header"
-      className="fixed flex items-center justify-between py-6 pl-4 pr-6 md:p-6"
+      className="fixed flex items-center justify-between py-6 pl-4 pr-6 md:p-6 bg-background-default"
       sx={{
         height: `${HEADER_DASHBOARD_HEIGHT}px`,
         width: { xs: "100%", md: `calc(100% - ${SIDEBAR_WIDTH}px)` },

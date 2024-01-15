@@ -6,12 +6,14 @@ import { DASHBOARD_PATH } from "@/constants/routes";
 import useExamStore from "@/stores/useExamStore";
 import { Box, Typography } from "@mui/material";
 import { IconChevronLeft } from "@tabler/icons-react";
+import classNames from "classnames";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import React, { useCallback, useEffect } from "react";
 
 const HeaderExam = () => {
-  const { activeExam, setActiveExam } = useExamStore();
+  const { activeExam, setActiveExam, isStartExam } = useExamStore();
+
   const params = useParams<{ id: string }>();
 
   const initActiveExam = useCallback(() => {
@@ -38,9 +40,19 @@ const HeaderExam = () => {
       className="fixed top-0 flex items-center justify-between w-full p-3 bg-background-default"
       sx={{ height: HEADER_HEIGHT }}
     >
-      <Link href={DASHBOARD_PATH}>
-        <Box className="flex items-center gap-1 py-1 pl-1 pr-2 rounded-lg hover:bg-primary-light/20 hover:cursor-pointer">
-          <IconChevronLeft size={18} className="text-primary-main" />
+      <Link href={isStartExam ? "" : DASHBOARD_PATH}>
+        <Box
+          className={classNames(
+            "flex items-center gap-1 py-1 pl-1 pr-2 rounded-lg",
+            {
+              "hover:bg-primary-light/20 hover:cursor-pointer": !isStartExam,
+              "hover:cursor-default": isStartExam,
+            }
+          )}
+        >
+          {!isStartExam && (
+            <IconChevronLeft size={18} className="text-primary-main" />
+          )}
           <Typography variant="body1" color="primary.main">
             Exam -
           </Typography>

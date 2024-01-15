@@ -10,6 +10,9 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: APP_NAME,
   description: APP_DESCRIPTION,
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
