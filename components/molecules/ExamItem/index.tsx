@@ -1,6 +1,7 @@
+import Card from "@/components/atoms/Card";
 import { EXAM_PATH } from "@/constants/routes";
 import { replaceString } from "@/utils/helper";
-import { Box, Button, Paper, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import {
   IconBook2,
   IconCalendar,
@@ -29,10 +30,7 @@ const ExamItem = ({
   totalQuestion,
 }: ExamItemProps) => {
   return (
-    <Paper
-      className="flex flex-col min-w-[340px] justify-between gap-3 p-4 border-2 border-white border-solid shadow-lg rounded-xl"
-      elevation={0}
-    >
+    <Card className="min-w-[340px]">
       <Box className="flex items-center gap-2">
         <IconFileSpreadsheet size={50} className="text-primary-main" />
         <Box className="flex flex-col">
@@ -67,7 +65,7 @@ const ExamItem = ({
           Start Exam
         </Button>
       </Link>
-    </Paper>
+    </Card>
   );
 };
 

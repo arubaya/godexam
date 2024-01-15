@@ -1,6 +1,6 @@
 import { HEADER_DASHBOARD_HEIGHT } from "@/constants/appVariables";
 import { Box } from "@mui/material";
-import Header from "@/components/organisms/Header";
+import Header from "@/components/molecules/Header";
 
 export default function MyExamLayout({
   children,

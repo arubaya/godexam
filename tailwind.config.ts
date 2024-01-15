@@ -26,6 +26,10 @@ const config: Config = {
           dark: "#235082",
           contrastText: "#fff",
         },
+        background: {
+          default: "#fafcfe",
+          paper: "#fff",
+        },
       },
     },
   },

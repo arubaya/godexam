@@ -14,3 +14,11 @@ type Exam = {
   date: string;
   dueDate: string;
 };
+
+type ActiveExam = Omit<Exam, "questions">;
+
+type ExamRule = {
+  id: number;
+  ruleTitle: string;
+  rules: string[];
+};

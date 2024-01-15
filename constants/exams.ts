@@ -481,3 +481,85 @@ export const DUMMY_EXAM_DATA: Array<Exam> = [
     dueDate: "2024-05-25",
   },
 ];
+
+export const EXAM_RULES: Array<ExamRule> = [
+  {
+    id: 1,
+    ruleTitle: "Waktu Ujian",
+    rules: [
+      "Ujian dimulai pada waktu yang telah ditentukan.",
+      "Durasi ujian akan berlangsung sesuai dengan yang telah dijadwalkan.",
+      "Pastikan Anda memulai ujian tepat waktu.",
+    ],
+  },
+  {
+    id: 2,
+    ruleTitle: "Tidak Diperkenankan",
+    rules: [
+      "Tidak diperbolehkan membuka buku atau materi pelajaran selama ujian.",
+      "Tidak diperkenankan berkomunikasi dengan orang lain selama ujian.",
+      "Dilarang menggunakan ponsel atau alat bantu elektronik lainnya.",
+    ],
+  },
+  {
+    id: 3,
+    ruleTitle: "Keamanan Ujian",
+    rules: [
+      "Pastikan kamera dan mikrofon tetap aktif selama ujian.",
+      "Ruang kerja harus bersih dan bebas dari benda atau catatan yang dapat digunakan untuk membantu ujian.",
+    ],
+  },
+  {
+    id: 4,
+    ruleTitle: "Plagiarisme",
+    rules: [
+      "Tidak diperbolehkan menyalin atau menggunakan jawaban dari sumber lain.",
+      "Segala bentuk tindakan plagiarisme akan dikenakan sanksi.",
+    ],
+  },
+  {
+    id: 5,
+    ruleTitle: "Konsultasi",
+    rules: [
+      "Dilarang berkonsultasi dengan orang lain kecuali jika diizinkan oleh pengawas ujian.",
+    ],
+  },
+  {
+    id: 6,
+    ruleTitle: "Pemantauan Ujian",
+    rules: [
+      "Pengawas ujian online dapat memantau peserta ujian melalui kamera atau layar.",
+    ],
+  },
+  {
+    id: 7,
+    ruleTitle: "Kesalahan Koneksi",
+    rules: [
+      "Peserta ujian bertanggung jawab untuk memastikan koneksi internet yang stabil.",
+      "Jika terjadi masalah teknis, segera hubungi pengawas ujian.",
+    ],
+  },
+  {
+    id: 8,
+    ruleTitle: "Penyelenggaraan Ujian",
+    rules: [
+      "Ikuti petunjuk dan instruksi yang diberikan oleh penyelenggara ujian.",
+      "Jangan keluar dari ruangan atau meninggalkan ujian sebelum waktu yang ditentukan.",
+    ],
+  },
+  {
+    id: 9,
+    ruleTitle: "Pengumpulan Jawaban",
+    rules: [
+      "Pastikan jawaban diunggah atau diserahkan sesuai dengan petunjuk yang telah diberikan.",
+      "Periksa kembali jawaban sebelum mengumpulkannya.",
+    ],
+  },
+  {
+    id: 10,
+    ruleTitle: "Sanksi Pelanggaran",
+    rules: [
+      "Pelanggaran terhadap aturan ujian dapat mengakibatkan diskualifikasi atau sanksi sesuai kebijakan sekolah atau lembaga.",
+    ],
+  },
+];
