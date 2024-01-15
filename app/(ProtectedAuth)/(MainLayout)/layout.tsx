@@ -1,7 +1,4 @@
-import {
-  HEADER_DASHBOARD_HEIGHT,
-  SIDEBAR_WIDTH,
-} from "@/constants/appVariables";
+import { SIDEBAR_WIDTH } from "@/constants/appVariables";
 import { Box } from "@mui/material";
 import LeftSidebar from "@/components/organisms/LeftSidebar";
 

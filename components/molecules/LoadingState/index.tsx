@@ -13,7 +13,7 @@ const LoadingState = ({ withProgress, fullScreen }: LoadingStateProps) => {
   return (
     <Box
       className={classNames(
-        "flex items-center justify-center w-full min-h-screen",
+        "flex items-center justify-center w-full min-h-screen z-50 bg-background-default",
         { "absolute top-0": fullScreen }
       )}
     >

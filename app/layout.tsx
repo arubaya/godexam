@@ -4,6 +4,7 @@ import "./globals.css";
 import classNames from "classnames";
 import ThemeRegistry from "@/themes/ThemeRegistry";
 import { APP_DESCRIPTION, APP_NAME } from "@/constants/appIdentity";
+import Alert from "@/components/atoms/Alert";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -23,7 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body id="tailwind-root" className={classNames("", outfit.className)}>
-        <ThemeRegistry options={{ key: "mui" }}>{children}</ThemeRegistry>
+        <ThemeRegistry options={{ key: "mui" }}>
+          <Alert />
+          {children}
+        </ThemeRegistry>
       </body>
     </html>
   );

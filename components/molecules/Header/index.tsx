@@ -4,10 +4,19 @@ import {
   HEADER_DASHBOARD_HEIGHT,
   SIDEBAR_WIDTH,
 } from "@/constants/appVariables";
+import useAuth from "@/hooks/useAuth";
 import useGlobalStateStore from "@/stores/useGlobalStateStore";
-import { Avatar, Box, Button, IconButton, Typography } from "@mui/material";
-import { IconMenuDeep, IconUser } from "@tabler/icons-react";
-import React from "react";
+import {
+  Avatar,
+  Box,
+  Button,
+  IconButton,
+  Menu,
+  MenuItem,
+  Typography,
+} from "@mui/material";
+import { IconLogout, IconMenuDeep, IconUser } from "@tabler/icons-react";
+import React, { useState } from "react";
 
 interface HeaderProps {
   title: string;
@@ -16,8 +25,24 @@ interface HeaderProps {
 
 const Header = ({ title, subtitle }: HeaderProps) => {
   const { setOpenSidebarNavigation } = useGlobalStateStore();
+  const { logout, getUserData } = useAuth();
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const openAccountMenu = Boolean(anchorEl);
+  const handleOpenAccountMenu = (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleCloseAccountMenu = () => {
+    setAnchorEl(null);
+  };
   const handleOpenSidebar = () => {
     setOpenSidebarNavigation(true);
+  };
+
+  const handleLogout = () => {
+    logout();
+    handleCloseAccountMenu();
   };
   return (
     <Box
@@ -57,11 +82,27 @@ const Header = ({ title, subtitle }: HeaderProps) => {
       <Box className="flex items-center gap-3">
         <Box className="items-center hidden gap-1 md:flex">
           <Typography>Hi,</Typography>
-          <Typography>User</Typography>
+          <Typography>{getUserData?.user.name}</Typography>
         </Box>
-        <Avatar sx={{ width: 30, height: 30 }}>
-          <IconUser size={20} />
-        </Avatar>
+        <IconButton onClick={handleOpenAccountMenu}>
+          <Avatar sx={{ width: 30, height: 30 }}>
+            <IconUser size={20} />
+          </Avatar>
+        </IconButton>
+        <Menu
+          id="basic-menu"
+          anchorEl={anchorEl}
+          open={openAccountMenu}
+          onClose={handleCloseAccountMenu}
+          MenuListProps={{
+            "aria-labelledby": "basic-button",
+          }}
+        >
+          <MenuItem onClick={handleLogout}>
+            <IconLogout />
+            Logout
+          </MenuItem>
+        </Menu>
       </Box>
     </Box>
   );
