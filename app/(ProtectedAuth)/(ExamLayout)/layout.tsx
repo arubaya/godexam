@@ -23,7 +23,7 @@ export default function ExamLayout({
   }, []);
   useEffect(() => {
     if (_hasHydrated && activeExam.id !== id) {
-      resetExamStore();
+      // resetExamStore();
     }
   }, [_hasHydrated, activeExam.id, id, resetExamStore]);
   if (!_hasHydrated) {
